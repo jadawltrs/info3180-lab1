@@ -3,14 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <title>My Website - About</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='css/app.css')}}"/>
+        
     </head>
     <body>
-        <h1>Jada Walters</h1>
-        <p>
-            Hi, my name is Jada Walters. I am a 3rd year computer science major. 
-            I like astronomy, flowers and doing my own nails. My favourite constellation is Orion because 
-            it's the first one I could identify on my own. I am also a Christian and I take my faith seriously.
-            Me and Jesus locked in.
-        </p>
+        <div class="container">
+            <h1>Jada Walters</h1>
+            <p>
+                Hi, my name is Jada Walters. I am a 3rd year computer science major. 
+                I like astronomy, flowers and doing my own nails. My favourite constellation is Orion because 
+                it's the first one I could identify on my own. I am also a Christian and I take my faith seriously.
+                Me and Jesus locked in.
+            </p>
+            
+            <div style="text-align: center;">
+                <img src="{{ url_for('static', filename='orion.jpg')}}" alt="orion image" style="border-radius: 15px; width: 50%; max-width: 300px;">
+            </div></div>
+        </div>
     </body>
 </html>
